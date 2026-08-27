@@ -18,13 +18,13 @@ export default function HeroContentContainer() {
           className="text-3xl font-bold uppercase md:text-5xl"
           variants={fadeUpAnimationVariants}
         >
-          ताज़ा पौधे & बर्तन
+          Spice Garden Restaurant
         </motion.h1>
         <motion.p
           className="mt-4 text-lg md:text-xl max-w-xl text-gray-600"
           variants={fadeUpAnimationVariants}
         >
-          हर पौधा सावधानी से चुना गया, हर बर्तन स्टाइलिश और टिकाऊ। आज ही ऑर्डर करें और अपने स्थान को हरित बनाइए!
+          Authentic flavors, fresh ingredients, and a warm ambiance. Reserve your table today and enjoy a memorable dining experience.
         </motion.p>
         <motion.button
           whileHover={{ scale: 1.05, backgroundColor: "#2563eb" }}
@@ -32,7 +32,7 @@ export default function HeroContentContainer() {
           className="mt-6 px-6 py-3 bg-indigo-600 text-white rounded-lg font-medium transition-all"
           variants={fadeUpAnimationVariants}
         >
-          अब खरीदें
+          Make a Reservation
         </motion.button>
       </motion.div>
     </Container>
