@@ -1,17 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion"? Actually correct import is from "framer-motion".
-
-We need to write correct file.
-
-Let's write:
-
-
-<tool_call>
-<function=write_file>
-<parameter=content>
-"use client";
-
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { menuItems } from "@/data/menuItems";
