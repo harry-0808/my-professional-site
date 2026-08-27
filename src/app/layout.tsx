@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: metaTitle,
   },
   description: metaDesc,
-  keywords: ["Nextjs", "Starter", "App Router"],
+  keywords: ["Restaurant", "Indian Food", "Spice Garden", "Dining", "Menu"],
   formatDetection: {
     telephone: false,
   },

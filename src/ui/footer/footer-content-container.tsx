@@ -17,7 +17,7 @@ export default function FooterContentContainer() {
           }}
           variants={fadeUpAnimationVariants}
         >
-          © {currentYear} NextJS Starter
+          © {currentYear} Spice Garden Restaurant
         </motion.div>
       </div>
     </Container>

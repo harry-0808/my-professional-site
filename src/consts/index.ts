@@ -1,6 +1,6 @@
-export const metaTitle = "NextJS Starter";
+export const metaTitle = "Spice Garden Restaurant";
 export const metaDesc =
-  "A starter template for Next.js projects with Tailwind CSS and Framer Motion.";
+  "Authentic flavors, fresh ingredients, and a warm ambiance. Reserve your table today and enjoy a memorable dining experience.";
 
 export const ogSize = {
   width: 1600,
@@ -9,12 +9,12 @@ export const ogSize = {
 
 export const ogImageProps = {
   ...ogSize,
-  alt: "NextJS Starter",
+  alt: "Spice Garden Restaurant",
   contentType: "image/png",
 };
 
 export const defaultOpenGraph = {
-  siteName: "NextJS Starter",
+  siteName: "Spice Garden Restaurant",
   images: [
     {
       url: "/images/og.png",
