@@ -22,7 +22,8 @@ export default function HeaderContentContainer() {
           className="flex space-x-6"
           whileInView="show"
           initial="hidden"
-          viewport={{ once: true, delay: 0.2 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
           variants={fadeUpAnimationVariants}
         >
           <Link href="/" className="hover:text-indigo-600 transition-colors px-3 py-1 rounded">
