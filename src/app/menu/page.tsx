@@ -61,7 +61,6 @@ export default function MenuPage() {
                       <div className="flex items-center justify-between">
                         <span className="text-indigo-600 font-medium">₹{item.price}</span>
                         <motion.button
-                          asChild
                           className="px-3 py-1 bg-primary-50 text-primary-600 text-xs font-medium rounded-full hover:bg-primary-100 transition-colors"
                           whileHover={{ scale: 1.05 }}
                         >
