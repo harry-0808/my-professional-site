@@ -165,7 +165,6 @@ export default function AboutPage() {
               transition={{ delay: 0.7 }}
             >
               <motion.button
-                asChild
                 whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(99, 102, 241, 0.4)" }}
                 whileTap={{ scale: 0.98 }}
               >
