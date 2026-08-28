@@ -36,7 +36,7 @@ export default function MenuPage() {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             Our Exquisite Menu
-          </h1>
+          </motion.h1>
           <motion.p
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
@@ -46,7 +46,7 @@ export default function MenuPage() {
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             Authentic Indian cuisine crafted with fresh ingredients, aromatic spices, and culinary passion.
-          </p>
+          </motion.p>
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -107,7 +107,7 @@ export default function MenuPage() {
                   className="text-3xl font-bold text-center text-primary-600"
                 >
                   {group.category}
-                </div>
+                </motion.h2>
                 <div className="w-12 h-12 bg-primary-50 rounded-full flex items-center justify-center">
                   <motion.div
                     whileHover={{ rotate: 12 }}
@@ -155,14 +155,14 @@ export default function MenuPage() {
                           className="font-semibold text-lg text-gray-900 flex-1"
                         >
                           {item.name}
-                        </div>
+                        </motion.h3>
                         <motion.span
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.9 }}
                           className="text-indigo-600 font-medium px-3 py-1 bg-indigo-50 rounded-full text-sm"
                         >
                           ₹{item.price}
-                        </span>
+                        </motion.span>
                       </div>
 
                       <p className="text-sm text-gray-600 line-clamp-3">
@@ -209,7 +209,7 @@ export default function MenuPage() {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             Ready to Feast?
-          </h2>
+          </motion.h2>
           <motion.p
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
@@ -219,7 +219,7 @@ export default function MenuPage() {
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             Reserve your table today and embark on a memorable dining experience.
-          </p>
+          </motion.p>
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
