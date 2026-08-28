@@ -28,31 +28,46 @@ export default function MenuPage() {
               key={index}
               whileHover={{ y: -4, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-white rounded-lg p-6 shadow-sm transition-all"
+              className="bg-white rounded-xl p-6 shadow-xl transition-all"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
             >
-              <h2 className="text-2xl font-semibold mb-4 text-indigo-600">
+              <h2 className="text-3xl font-bold text-center mb-6 text-primary-600">
                 {group.category}
               </h2>
-              <div className="space-y-4">
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {group.items.map(item => (
                   <motion.div
                     key={item.id}
-                    whileHover={{ scale: 1.01 }}
+                    whileHover={{ scale: 1.03, y: -2 }}
                     whileTap={{ scale: 0.99 }}
-                    className="flex items-start space-x-4 p-3 border rounded hover:bg-gray-50 transition-all"
+                    className="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl"
                   >
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="w-16 h-16 object-cover rounded"
-                    />
-                    <div>
-                      <h3 className="font-medium">{item.name}</h3>
-                      <p className="text-sm text-gray-600">{item.description}</p>
-                      <p className="font-semibold text-indigo-600">₹{item.price}</p>
+                    <div className="relative">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-full h-48 object-cover"
+                      />
+                      {/* Price badge */}
+                      <div className="absolute top-2 right-2 bg-primary-600 text-white text-xs font-medium px-2 py-1 rounded">
+                        ₹{item.price}
+                      </div>
+                    </div>
+                    <div className="p-5 space-y-3">
+                      <h3 className="font-semibold text-lg text-gray-900">{item.name}</h3>
+                      <p className="text-sm text-gray-600 line-clamp-2">{item.description}</p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-indigo-600 font-medium">₹{item.price}</span>
+                        <motion.button
+                          asChild
+                          className="px-3 py-1 bg-primary-50 text-primary-600 text-xs font-medium rounded-full hover:bg-primary-100 transition-colors"
+                          whileHover={{ scale: 1.05 }}
+                        >
+                          Order Now
+                        </motion.button>
+                      </div>
                     </div>
                   </motion.div>
                 ))}
