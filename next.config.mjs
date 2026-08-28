@@ -1,23 +1,17 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  async headers() {
-    const headers = [];
-
-    if (process.env.APP_ENV !== "production") {
-      headers.push({
-        headers: [
-          {
-            key: "X-Robots-Tag",
-            value: "noindex",
-          },
-        ],
-
-        source: "/:path*",
-      });
-    }
-
-    return headers;
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "source.unsplash.com",
+      },
+    ],
   },
 };
 

@@ -30,17 +30,16 @@
     "typecheck": "tsc --noEmit --incremental false"
   },
   "engines": {
-    "node": "22.x",
-    "pnpm": ">=11.0.0"
+    "node": "22.x"
   },
-  "packageManager": "pnpm@11.10.0",
   "dependencies": {
     "@tailwindcss/postcss": "^4.3.2",
     "framer-motion": "^12.42.2",
     "next": "^16.2.10",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.0",
